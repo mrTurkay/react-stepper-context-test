@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+# React Stepper Context - Example Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an example project demonstrating the usage of the `react-stepper-context` library.
 
-Currently, two official plugins are available:
+## 📖 About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project showcases:
+- **Multi-Step Wizard**: Example of managing multiple steps in a flow.
+- **Custom Components**: Easily organize your steps using custom components.
+- **Step Navigation**: Includes sidebar navigation for steps.
+- **Form Management**: Demonstrates saving step-specific form data.
+- **React and React Native**: Built for both environments.
 
-## Expanding the ESLint configuration
+Learn more about `react-stepper-context` in the [main project repository](https://github.com/mrTurkay/react-stepper-context).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Run the project**:
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   yarn start
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   The app will open in your browser at [http://localhost:5173/](http://localhost:5173).
+
+## 🛠 Built With
+
+- React
+- TypeScript
+- [react-stepper-context](https://www.npmjs.com/package/react-stepper-context)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
