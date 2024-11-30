@@ -1,7 +1,7 @@
-import { StepStatus, useReactStepper } from "react-stepper-context";
+import { StepStatus, useReactStepperContext } from "react-stepper-context";
 
 export const Step1: React.FC = () => {
-  const { goToNextStep } = useReactStepper();
+  const { goToNextStep } = useReactStepperContext();
   return (
     <div className="content-wrapper">
       <div style={{ textAlign: "left" }}>

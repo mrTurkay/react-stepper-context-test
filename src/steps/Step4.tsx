@@ -1,7 +1,7 @@
-import { useReactStepper } from "react-stepper-context";
+import { useReactStepperContext } from "react-stepper-context";
 
 export const Step4: React.FC = () => {
-  const { goToStep, goToPreviousStep, allStepsValues } = useReactStepper();
+  const { goToStep, goToPreviousStep, allStepsValues } = useReactStepperContext();
 
   const handleDoneClick = () => {
     alert("You have completed all the steps!");

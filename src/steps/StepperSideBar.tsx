@@ -1,7 +1,7 @@
-import { useReactStepper } from "react-stepper-context";
+import { useReactStepperContext } from "react-stepper-context";
 
 export const StepperSideBar = () => {
-  const { currentStepKey, steps, goToStep } = useReactStepper();
+  const { currentStepKey, steps, goToStep } = useReactStepperContext();
 
   return (
     <div className="stepper-wrapper">

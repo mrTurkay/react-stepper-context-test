@@ -1,5 +1,5 @@
 import React from "react";
-import { StepStatus, useReactStepper } from "react-stepper-context";
+import { StepStatus, useReactStepperContext } from "react-stepper-context";
 
 export const Step3: React.FC = () => {
   const {
@@ -8,7 +8,7 @@ export const Step3: React.FC = () => {
     goToPreviousStep,
     goToNextStep,
     isCurrentStepAlreadySubmitted,
-  } = useReactStepper();
+  } = useReactStepperContext();
 
   const values = getCurrentStepValues();
 
