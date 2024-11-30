@@ -1,10 +1,12 @@
+import "./App.css";
+
 import { ReactStepperContext } from "react-stepper-context";
 
-import "./App.css";
+import { StepperSideBar } from "./steps/StepperSideBar";
+
 import { Step1 } from "./steps/Step1";
 import { Step2 } from "./steps/Step2";
 import { Step3 } from "./steps/Step3";
-import { StepperSideBar } from "./steps/StepperSideBar";
 import { Step4 } from "./steps/Step4";
 
 const steps = [
