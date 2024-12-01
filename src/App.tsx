@@ -38,10 +38,10 @@ const steps = [
 function App() {
   return (
     <ReactStepperContext steps={steps}>
-      {(currentStepComponent) => (
+      {(stepContent) => (
         <div className="wrapper">
           <StepperSideBar />
-          {currentStepComponent}
+          {stepContent}
         </div>
       )}
     </ReactStepperContext>
